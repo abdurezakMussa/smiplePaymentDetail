@@ -1,0 +1,26 @@
+{
+  "name": "smiplePaymentDetail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdurezakMussa/smiplePaymentDetail.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdurezakMussa/smiplePaymentDetail/issues"
+  },
+  "homepage": "https://github.com/abdurezakMussa/smiplePaymentDetail#readme"
+}
