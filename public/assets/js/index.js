@@ -45,9 +45,17 @@ function paymentdetail(i) {
     datatype: JSON,
     method: "GET",
   }).then(function (data) {
+    $(".pay-group-head")
+    .append(`<tr><td>CVV</td> <td>EXP</td> <td>PAN</td>  </tr> `);
     $(".pay-list").append(
-      `<tr><td>${data[i].Payee.Name}</td> <td>${data.Fax}</td> <td>${data.Phone}</td> <td>${data.Attention}</td> </tr> `
+      `<tr><td>${data[i].Payment.CVV}</td> <td>${data[i].Payment.Exp}</td> <td>${data[i].Payment.PAN}</td>  </tr> `
     );
- 
+    $(".pay-group-head")
+    .append(`<tr><td>PayorName</td> <td>PayorId</td> <td>InvoiceNo</td>  </tr> `);
+    $(".pay-rem").append(
+      `<tr><td>${data[i].Remittance[i].PayorName}</td> <td>${data[i].Remittance[i].PayorId}</td> <td>${data[i].Remittance[i].InvoiceNo}</td> <td>${data[i].Remittance[i].Description}</td> </tr> `
+    );
+    console.log(data[i])
   });
+ 
 }

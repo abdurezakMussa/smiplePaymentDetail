@@ -32,19 +32,3 @@ let getPaymentById = function (id) {
     });
   }
  
-//   let renderPaymentList = function (payments) {
-//     // $noteList.empty();
-//     let paymentLists = [];
-//     $(".pay-group-head").append(`<tr><td>Name</td> <td>Fax</td> <td>Phone</td> <td>Attention</td><td class="text-center"> 
-//       </td> </tr> `);
-//     for (let i = 0; i < payments.length; i++) {
-//       let paymentLists = payments[i].Payee;
-//       console.log("Payee", paymentLists);
-//       $(".pay-group").append(`<tr><td>${paymentLists.Name}</td> <td>${paymentLists.Fax}</td> <td>${paymentLists.Phone}</td> <td>${paymentLists.Attention}</td><td class="text-center"> 
-//       <button  type="button" id="btn${i}" onclick="paymentdetail(${i})" >Detail</button></td> </tr> `);
-//     }
-//     // $("#btn").click(function(){
-//     //  window.location="paymentDetail.html"
-//     // });
-    
-//   };
